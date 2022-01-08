@@ -25,6 +25,5 @@ console.log(elementos[1]);
 // Éste es un objeto
 var persona = {
   nobmre: "Jose",
-  edad: 44;
+  edad: 44
 }
-
