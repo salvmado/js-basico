@@ -7,6 +7,7 @@ function miFuncion() {
 }
 
 miFuncion(); // mando llamar a la función y ejecuta el código
+// Podemos llamar a una función declarativa antes de ser declarada.
 
 // 2.- Funciones de expresión o función anónima
 
