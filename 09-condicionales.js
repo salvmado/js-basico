@@ -28,7 +28,7 @@ if (false) {
 
 if (true) { // si es este
   console.log("Hola");
-} else if () { // si no es el anterior, entonces es éste
+} else if ("otra opción") { // si no es el anterior, entonces es éste
   console.log("Si no es el primero")
 }
 else { // si no es ninguno de los anteriores, entonces actúa el "else"
