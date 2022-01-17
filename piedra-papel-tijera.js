@@ -74,3 +74,39 @@ function piedraPapelTijera(miManoEnFormaDe) {
 piedraPapelTijera("tijera"); 
 // Resultado de ejemplo:
 // ¡Ganaste! La máquina jugó papel 
+
+/* --------------------------------------------------------------------------- */
+
+
+function piedraPapelTijera(miJuego) {
+
+  var juego = ["piedra", "papel", "tijera"];
+  var maquinaJuega = juego[Math.floor(Math.random() * (3 - 0)) + 0];
+
+  switch (true) {
+    case maquinaJuega === "piedra" && miJuego === "tijera" :
+    case maquinaJuega === "papel" && miJuego === "piedra" :
+    case  maquinaJuega === "tijera" && miJuego === "papel" : 
+    console.log(`¡Perdiste! La máquina ganó porque jugó: ${maquinaJuega}`);
+    break;
+    
+    case miJuego === "papel" && maquinaJuega === "piedra" :
+    case miJuego === "tijera" && maquinaJuega === "papel" :
+    case miJuego === "piedra" && maquinaJuega === "tijera" :
+    console.log(`¡Ganaste! La máquina jugó ${maquinaJuega}!`);
+    break;
+    
+    case miJuego === "piedra" && maquinaJuega === "piedra" :
+    case miJuego === "papel" && maquinaJuega === "papel" :
+    case miJuego === "tijera" && maquinaJuega === "tijera" :
+    console.log(`Es un empate, la máquina jugó: ${maquinaJuega}`);
+    break;
+
+    default:
+    console.log("introduce un argumento válido: 'piedra', 'papel' o 'tijera'.");
+  }
+}
+
+piedraPapelTijera("papel"); 
+// Resultado de ejemplo:
+// ¡Ganaste! La máquina jugó piedra
